@@ -1,0 +1,8 @@
+<div
+  class="spinner-{{ grow ? 'grow' : 'border' }} text-{{ cor }} spinner-{{
+    grow ? 'grow' : 'border'
+  }}-{{ size }}"
+  role="status"
+>
+  <span class="visually-hidden">Loading...</span>
+</div>
