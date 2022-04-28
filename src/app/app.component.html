@@ -1,0 +1,56 @@
+<!-- questão 9
+<div class="container mt-2">  
+  {{ textoqualquer }}
+  {{ 1 * 5 }}
+  {{ getVal() }}
+  {{ true && false }}
+  {{ data | date: 'hh:mm:ss' }}
+</div>
+ -->
+
+<!-- Questao 10 ao 13 
+<div class="container mt-3">
+  <div class="mt-3">
+    <input [(ngModel)]="nome" type="text" />
+    <input [(ngModel)]="sobrenome" type="text" />
+    <button (click)="adicionarPessoa()" type="button" class="btn btn-success">
+      Add
+    </button>
+  </div>
+
+  <div class="mt-3">
+    <ul class="list-group">
+      <li
+        *ngFor="let pessoasLista of pessoas; let index = index"
+        class="list-group-item {{ index == activeCont ? 'active' : '' }}"
+      >
+        {{ pessoasLista.nome }} {{ pessoasLista.sobrenome }}
+      </li>
+    </ul>
+  </div>
+
+  <div class="mt-3">
+    <button
+      (click)="anteriorActive()"
+      [disabled]="activeCont == 0"
+      type="button"
+      class="btn btn-primary"
+    >
+      Anterior
+    </button>
+    <button
+      (click)="proximoActive()"
+      [disabled]="activeCont == activeMax"
+      type="button"
+      class="btn btn-secondary"
+    >
+      Proximo
+    </button>
+
+    <button (click)="excluirAtual()" type="button" class="btn btn-danger">
+      Excluir
+    </button>
+  </div>
+</div>
+-->
+<spinners-app></spinners-app>
