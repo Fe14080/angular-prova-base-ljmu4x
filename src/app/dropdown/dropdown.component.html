@@ -1,0 +1,22 @@
+<div class="dropdown">
+  <button
+    class="btn btn-{{ cor }} dropdown-toggle {{ selecionado ? 'show' : '' }}"
+    type="button"
+    id="dropdownMenuButton1"
+    data-bs-toggle="dropdown"
+    aria-expanded="true"
+    (click)="acionaDrop()"
+  >
+    <ng-content></ng-content>
+  </button>
+  <ul
+    class="dropdown-menu {{ selecionado ? 'show' : '' }}"
+    aria-labelledby="dropdownMenuButton1"
+  >
+    <li>
+      <a *ngFor="let itens of conteudo" class="dropdown-item" href="#">{{
+        itens
+      }}</a>
+    </li>
+  </ul>
+</div>
